@@ -1,0 +1,105 @@
+@font-face {
+  font-family: CraftWork400;
+  src: url(./assets/fonts/CraftworkGrotesk400.ttf);
+}
+@font-face {
+  font-family: CraftWork500;
+  src: url(./assets/fonts/CraftworkGrotesk500.ttf);
+}
+@font-face {
+  font-family: CraftWork600;
+  src: url(./assets/fonts/CraftworkGrotesk600.ttf);
+}
+@font-face {
+  font-family: CraftWork700;
+  src: url(./assets/fonts/CraftworkGrotesk700.ttf);
+}
+@font-face {
+  font-family: CraftWork900;
+  src: url(./assets/fonts/CraftworkGrotesk900.ttf);
+}
+@font-face {
+  font-family: Sfpro;
+  src: url(./assets/fonts/SFPRO.ttf);
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.wrapper {
+  padding: 50px 15vw;
+  padding-top: 10px;
+  height: 100%;
+  width: 100%;
+  @media(max-width:1350px){
+    padding: 50px 13vw;
+    padding-top: 10px;
+  }
+  @media(max-width:900px){
+    padding: 50px 10vw;
+    padding-top: 10px;
+  }  
+  @media(max-width:500px) {
+    padding: 30px 7vw;
+    padding-top: 0;
+  }
+}
+
+.title {
+  color: black;
+  font-size: 3.3vw;
+  font-weight: 500;
+  text-align: left;
+  font-family: Sfpro;
+
+  @media (max-width:1200px) {
+    font-size: 3.8vw;
+  }
+
+  @media (max-width:700px) {
+    font-size: 4.5vw;
+  }
+
+  @media (max-width:500px) {
+    font-size: 5.5vw;
+  }
+
+  @media (max-width:400px) {
+    font-size: 6vw;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.contrast-0 {
+  background-color: transparent;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+.contrast {
+  background-color: rgba(0, 0, 0, 0.48);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+.contrast-05 {
+  background-color: rgba(0, 0, 0, 0.268);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}

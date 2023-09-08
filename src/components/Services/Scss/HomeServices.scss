@@ -1,0 +1,148 @@
+.HomeServices{
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: sticky;
+    .wrapper{
+        .title{
+            text-align: center;
+        }
+        .cards{
+            padding: 10px;
+            .body-0{
+                padding: 40px;
+                border-radius: 20px;
+                background-color: #64646422;
+                @media (max-width:1300px){
+                    padding: 30px;  
+                    border-radius: 17px;                         
+                }
+                @media (max-width:500px){
+                    padding: 20px;  
+                    border-radius: 15px;                         
+                } 
+                @media (max-width:450px){
+                    padding: 10px;  
+                    border-radius: 15px;                         
+                }  
+                .services{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    @media (max-width:600px){   
+                        display: grid;          
+                        grid-template-columns: repeat(2, 2fr);
+                    } 
+                    .serv{
+                        padding: 40px;
+                        @media (max-width:1300px){
+                            padding: 30px;                                                      
+                        }                            
+                        @media (max-width:1100px){   
+                            padding: 2vw;              
+                        } 
+                        @media (max-width:600px){   
+                            width: 100%;
+                            padding: 3vw;
+                        }
+                        @media (max-width:450px){                               
+                            padding: 2.5vw;
+                        }
+                        .body{
+                            height: 100%;
+                            cursor: pointer;
+                            display: flex;
+                            margin-top: 2vw;                    
+                            padding: 40px 50px;
+                            border-radius: 20px;                    
+                            align-items: center;
+                            flex-direction: column;
+                            background-color: #64646426;
+                            justify-content: space-between;
+                            &:hover{
+                                img{
+                                    transform: scale(1.1);
+                                }
+                            }
+                            @media (max-width:1300px){
+                                padding: 30px 40px;    
+                                border-radius: 17px;                         
+                            } 
+                            @media (max-width:1100px){
+                                padding: 2vw 2.8vw;    
+                                border-radius: 15px;                         
+                            } 
+                            @media (max-width:600px){
+                                padding: 3vw 3.5vw;    
+                                border-radius: 13px;                         
+                            }                            
+                            @media (max-width:450px){   
+                                padding: 3.3vw 3.8vw;
+                                border-radius: 11px;                         
+                            }    
+                            img{
+                                max-width: 100%;
+                                min-width: 100%;
+                                transition: 0.3s;
+                            }   
+                            .name{
+                                margin: 0;
+                                width: 100%;
+                                text-align: center;
+                                font-family: CraftWork500;
+                                @media (max-width:1300px){
+                                    font-size: 15px;                        
+                                } 
+                                @media (max-width:1100px){
+                                    font-size: 14px;                        
+                                } 
+                                @media (max-width:500px){
+                                    font-size: 12px;                        
+                                }
+                                &::first-letter {
+                                    text-transform: uppercase;
+                                }
+                            }             
+                        }
+                    }
+                }                              
+            }
+        }
+        .link{
+            width: 100%;
+            display: flex;
+            margin-top: 3vw;
+            align-items: center;
+            justify-content: center;
+            .explore{
+                outline: none;
+                color: white;
+                font-size: 25px;
+                padding: 15px 60px;
+                border-radius: 18px;                            
+                text-decoration: none;                                
+                background-color: rgba(0, 0, 0, 0.838);
+                border: solid 1px rgba(0, 0, 0, 0.838);
+                &:hover{
+                    color: black;
+                    background-color: rgb(206, 206, 206);
+                }
+                @media (max-width:1100px) {
+                    font-size: 20px;
+                }
+                @media (max-width:900px) {
+                    font-size: 18px;                   
+                    padding: 13px 30px;
+                    border-radius: 14px; 
+                }
+                @media (max-width:700px) {
+                    font-size: 16px;
+                    padding: 10px 20px;
+                }
+            }                            
+        }
+    }
+}
